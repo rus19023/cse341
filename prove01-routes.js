@@ -1,7 +1,7 @@
 const requestHandler = (req, res) => {
   const url = req.url;
   const method = req.method;
-  /*
+  // show welcome message on root page
   if (url === '/') {
     res.setHeader('Content-Type','text/html')
     res.write('<html>');
@@ -10,22 +10,15 @@ const requestHandler = (req, res) => {
     res.write('</html>');
     return res.end();
   }
-  // create form to collect new username
+  // show user list if in /users route
   if (url === '/users') {
     res.setHeader('Content-Type', 'text/html');
-    res.write('<html>');
-    res.write('<head><title>Create User</title></head>');
-    res.write(
-      '<body><form action="/create-user" method="POST"><input type="text" name="username"><button type="submit">Create Username</button></form></body>'
-    );
-    res.write('</html>');
-    return res.end();
+    res.write('<html><head><title>User List</title></head><body><section><ul><li>user1</li><li>user2</li></ul></section></body></html>');
   }
-  // show user list if in /users route
+  // create form to collect new username
   if (url === '/create-user' && method === 'POST') {
     res.setHeader('Content-Type', 'text/html');
     res.write('<html><head><title>Create User</title></head><body>');
-    res.write('<section><ul><li>user1</li><li>user2</li></ul></section>');
     res.write('<section><form action="/create-user" method="POST"><input type="text" name="username"><button type="submit">Create Username</button></form></section>');
     res.write('</body></html>');
     res.write('');
@@ -42,7 +35,6 @@ const requestHandler = (req, res) => {
         return res.end();
       });
     };
-    */
   };
 
 exports.handler = requestHandler;
