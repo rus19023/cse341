@@ -7,7 +7,8 @@ const requestHandler = (req, res) => {
     res.write('<html>');
     res.write('<head><title>Welcome to our server!</title><head>');
     res.write('<body> <h1>Thanks for visiting our Node.js server!</h1> </body>');
-    res.write('</html>');
+    res.write('<section><form action="/create-user" method="POST"><input type="text" name="username"><button type="submit">Create Username</button></form></section>');
+    res.write('</body></html>');
     return res.end();
   }
   // show user list if in /users route
@@ -17,11 +18,6 @@ const requestHandler = (req, res) => {
   }
   // create form to collect new username
   if (url === '/create-user' && method === 'POST') {
-    res.setHeader('Content-Type', 'text/html');
-    res.write('<html><head><title>Create User</title></head><body>');
-    res.write('<section><form action="/create-user" method="POST"><input type="text" name="username"><button type="submit">Create Username</button></form></section>');
-    res.write('</body></html>');
-    res.write('');
     const body = [];
     req.on('data', chunk => {
       console.log(chunk);
