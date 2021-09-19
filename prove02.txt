@@ -2,7 +2,7 @@ After completing the assignment, be sure to push to Github and Heroku.
 Please answer the questions in this text file and submit it to I-Learn.
 
 1. Copy and paste the URL for your web application (e.g., Heroku):
-   https://shrouded-woodland-32009.herokuapp.com/
+   https://cse341bookstore.herokuapp.com/
 
 2. Copy and paste the URL for your source code repository (e.g., GitHub):
    https://github.com/rus19023/cse341.git
@@ -11,7 +11,7 @@ Please answer the questions in this text file and submit it to I-Learn.
    Pages are all displaying, shows images of books and lists books that are added in the products page.
 
 4. Briefly describe any pieces of the assignment that are not yet working correctly.
-   n/a
+   Can't be sure as heroku didn't deploy.
 
 
 5. Briefly describe the "coolest" thing you learned while completing this assignment.
@@ -30,4 +30,7 @@ Please answer the questions in this text file and submit it to I-Learn.
    5 - Shows creativity and excels above and beyond requirements
 
 8. Provide a brief justification (1-2 sentences) for selecting that category.
-      The app works, but not with ejs implemented. Heroku is not deployed correctly. I have never used it before and there was not much time to learn it plus all the coding!
+      The app works, but not with ejs implemented. Heroku is not deployed correctly. I have never used it before and there was not much time to learn it plus all the coding! After all the tutorial from Br. Birch, I got another error, (even after upgrading heroku) well, the same one that said:
+
+      ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/cse341bookstore.git'
