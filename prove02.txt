@@ -2,24 +2,27 @@ After completing the assignment, be sure to push to Github and Heroku.
 Please answer the questions in this text file and submit it to I-Learn.
 
 1. Copy and paste the URL for your web application (e.g., Heroku):
-   
+   https://shrouded-woodland-32009.herokuapp.com/
 
 2. Copy and paste the URL for your source code repository (e.g., GitHub):
-
+   https://github.com/rus19023/cse341.git
 
 3. Briefly list and describe the elements of the application that are functioning.
-
+   Pages are all displaying, shows images of books and lists books that are added in the products page.
 
 4. Briefly describe any pieces of the assignment that are not yet working correctly.
+   n/a
 
 
 5. Briefly describe the "coolest" thing you learned while completing this assignment.
+   Writing html code without all the <> tags!
 
 
 6. If you could change this assignment to be more effective or helpful, what would you change?
+   The tutorials by Br. Birch and Max are all great! I am still confused about the instructions, which don't say to use ejs, but that is what's in the rubric, unless I missed it. I also have issues with heroku because I renamed it, but the instructions in documentation to fix that didn't work or I did them wrong.
 
 
-7. Please select the category you feel best describes your assignment: []
+7. Please select the category you feel best describes your assignment: [3]
    1 - Some attempt was made
    2 - Developing, but significantly deficient
    3 - Slightly deficient, but still mostly adequate
@@ -27,4 +30,4 @@ Please answer the questions in this text file and submit it to I-Learn.
    5 - Shows creativity and excels above and beyond requirements
 
 8. Provide a brief justification (1-2 sentences) for selecting that category.
-   1. 
+      The app works, but not with ejs implemented. Heroku is not deployed correctly. I have never used it before and there was not much time to learn it plus all the coding!
