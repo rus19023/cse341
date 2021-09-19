@@ -5,19 +5,20 @@
   "engines": {
     "node": "12.x"
   },
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "test": "node prove01.js"
+    "start": "nodemon app.js",
+    "test": "node test.js"
   },
   "dependencies": {
     "ejs": "^2.5.6",
     "express": "^4.17.1",
     "express-handlebars": "^3.0.2",
+    "node": "^16.9.1",
+    "nodemon": "^2.0.12",
     "pug": "^2.0.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12",
     "request": "^2.81.0",
     "tape": "^4.7.0"
   },
