@@ -5,6 +5,9 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+const host = '0.0.0.0';
+const port = process.env.PORT || 3000'
+
 app.set('view engine', 'pug');
 app.set('views', 'views');
 
@@ -21,4 +24,4 @@ app.use((req, res, next) => {
     res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
 });
 
-app.listen(3000);
+app.listen(port, host);
