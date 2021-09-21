@@ -26,3 +26,4 @@ app.use((req, res, next) => {
 });
 
 app.listen(port, host);
+
