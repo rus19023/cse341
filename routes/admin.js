@@ -10,12 +10,13 @@ const products = [];
 
 // /admin/add-product => GET
 router.get('/add-product', (req, res, next) => {
-  res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
+  res.sendFile(path.join(rootDir, 'views', 'add-product.ejs'));
 });
 
 // /admin/add-product => POST
 router.post('/add-product', (req, res, next) => {
-  products.push({ title: req.body.title });
+  products.push({ title: req.body.title, price: req.body.price, author: req.body.author, publish: req.body.published, desc: req.body.description });
+  console.log(products);
   res.redirect('/');
 });
 

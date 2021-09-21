@@ -1,32 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('partials/head.ejs') %>
+        <link rel="stylesheet" href="/css/forms.css">
+        <link rel="stylesheet" href="/css/product.css">
+    </head>
 
-<head>
-    <% include ./views/partials/head.ejs %>
-</head>
+    <body>
+        <%- include('partials/nav.ejs') %>
 
-<body>
-    <header class="main-header">
-        <% include ./views/partials/header.ejs %>
-        <% include ./views/partials/nav.ejs %>
-    </header>
+        <main>
+            <form class="product-form" action="/admin/add-product" method="POST">
+                <div class="form-control">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title">
+                    <label for="published">Publish Date</label>
+                    <input type="text" name="published" id="published">
+                    <label for="author">Author</label>
+                    <input type="text" name="author" id="author">
+                    <label for="price">Price</label>
+                    <input type="text" name="price" id="price">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" rows="4" cols="50"></textarea>
+                </div>
 
-    <main>
-        <form class="product-form" action="/admin/add-product" method="POST">
-            <div class="form-control">
-                <label for="title">Title</label>
-                <input type="text" name="title" id="title">
-                <label for="published">Publish Date</label>
-                <input type="text" name="published" id="published">
-                <label for="author">Author</label>
-                <input type="text" name="author" id="author">
-                <label for="description">Description</label>
-                <textarea name="description" id="description" rows="4" cols="50"></textarea>
-            </div>
-
-            <button class="btn" type="submit">Add Product</button>
-        </form>
-    </main>
-</body>
-
-</html>
+                <button class="btn" type="submit">Add Product</button>
+            </form>
+        </main>
+<%- include('partials/footer.ejs') %>
